@@ -187,14 +187,11 @@ body{
     color: #0ff;
 }
 
-.info_sobre_mi{
-}
-
 
 .text_sobre_mi{
     padding: 20px;
     font-size: 1.5em;
-    
+    text-align: center;
     
     color: #f1f1f1;
     font-family: 'Roboto Mono', monospace;
@@ -216,15 +213,121 @@ body{
     width: 150px;
     height: 150px;
     margin: 10px;
+
+    border: 4px solid transparent;
 }
 
 .icons:hover{
     transition: .2s;
-    transform: scale(1.2);
     border-bottom: 4px solid #f0f;
 }
 
 .icons img{
     width: 150px;
     height: 150px;
+}
+
+
+/* PROYECTOS */
+
+.proyectos_container{
+    height: 1000px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 10% auto auto;
+
+    justify-content: space-around;
+
+}
+
+.title_proyectos{
+    grid-column: 1/4;
+
+    color: #0ff;
+    font-size: 2em;
+}
+
+.box_container{
+    width: 300px;
+    height: 200px;
+
+    margin: 20px;
+    
+}
+
+/* CARAS y CONTENIDO */
+
+/* CARA DELANTERA CARTA */
+
+.face{
+    width: 300px;
+    height: 200px;
+    background: #333;
+
+    border-radius: 10px;
+}
+
+.content_card{
+    opacity: 2;
+    transition: .5s;
+    text-align: center;
+} 
+
+.face_front{
+    z-index: 2;
+    transform: translateY(100px);
+    position: relative;
+}
+
+.box_container:hover .face_front{
+    transform: translateY(0);
+    transition: .2s;
+    box-shadow: 
+    0 0 60px whitesmoke,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+}
+
+/* CARA TRASERA DE LA CARTA */
+
+.face_back{
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .8);
+    transform: translateY(-100px);
+}
+
+.box_container:hover .face_back{
+    transform: translateY(0);
+    transition: .2s;
+}
+
+.face_back p, a{
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.face_back a{
+    text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+}
+
+.face_back a:hover{
+    background: #333;
+    color: #f5f5f5;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, .5);
 }
