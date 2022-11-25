@@ -4,7 +4,7 @@
 
 body{
     background: #222;
-    font-family: helvetica;
+    font-family: 'Rubik', sans-serif;
 
 }
 
@@ -12,12 +12,15 @@ body{
     width: 100%;
 }
 
+
 /* -------------------  CABECERA  ----------------- */
 
 .header_container{
     width: 100%;
     height: 70px;
     background: #333;
+
+    border-bottom: 2px solid #222;
 
     display: grid;
     grid-template-columns: 25% 15% auto 5%;
@@ -129,7 +132,7 @@ body{
 .presentation_container{
     position: relative;
     bottom: -70px;
-    border: 2px solid #f0f;
+    
     
     height: 88vh;
 
@@ -178,18 +181,31 @@ body{
     grid-template-columns: 60% 40%;
 }
 
-.info_sobre_mi{
-    border: 2px solid red;
+.sobre_mi_container h2{
+    padding-left: 40px;
+    font-size: 2em;
+    color: #0ff;
 }
 
+.info_sobre_mi{
+}
+
+
+.text_sobre_mi{
+    padding: 20px;
+    font-size: 1.5em;
+    
+    
+    color: #f1f1f1;
+    font-family: 'Roboto Mono', monospace;
+}
 
 
 /* HABILIDADES */
 
 .habilidades{
-    border: 2px solid #0ff;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
 .habilidades h2{
@@ -197,10 +213,15 @@ body{
 }
 
 .icons{
-    border: 2px solid #f0f;
     width: 150px;
     height: 150px;
-    margin: 5px;
+    margin: 10px;
+}
+
+.icons:hover{
+    transition: .2s;
+    transform: scale(1.2);
+    border-bottom: 4px solid #f0f;
 }
 
 .icons img{
