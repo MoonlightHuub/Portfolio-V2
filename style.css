@@ -50,8 +50,8 @@ body{
 
 .name_index_container h2:hover{
     cursor: pointer;
-    transition: .5s;
-    color: #f0f;
+    transition: .2s;
+    color: #0ff;
 }
 
 /* PLACEHOLDER */
@@ -76,7 +76,7 @@ body{
 .shortcut_nav_container a:hover{
     transform: scale(1.2);
     transition: .2s;
-    color: #f0f;
+    color: #0ff;
 }
 
 .shortcut_list{
@@ -107,20 +107,87 @@ body{
     line-height: 64px;
 }
 
+.mini_configuration_menu_container, .button_menu_mini:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .2s;
+}
+
 .button_menu_mini{
     font-size: 1.2em;
     position: relative;
     top: 3px;
 }
 
-.button_menu_mini:hover{
+.floating_menu{
+    display: none;
+    width: 250px;
+    height: 300px;
+
+    border-radius: 10px;
+    background-color: #333;
+    border: 2px solid #222;
+
+    position: absolute;
+    left: -200px;
+    z-index: 5;
+
+    box-shadow: -3px 10px 51px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 10px 51px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 10px 51px -4px rgba(0,0,0,0.75);
+}
+
+.mini_configuration_menu_container:hover .floating_menu{
+    display: block;
     cursor: pointer;
 }
 
-.button_menu_mini:active{
-    transform: scale(1.5);
-    transition: .2s;
+/* MULTI IDIOMA MENU */
+
+.check{
+    position: relative;
+    width: 50px;
+    border: 2px solid #333;
 }
+
+.check:hover{
+    cursor: pointer;
+}
+
+.check:before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #222;
+    border-radius: 25px;
+
+}
+
+.check:after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    transition: .25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #0ff;
+}
+
+.check:checked:before{
+    background-color: #0ff;
+}
+
+
+
 
 /* -------------------         ------------------*/
 
@@ -219,7 +286,7 @@ body{
 
 .icons:hover{
     transition: .2s;
-    border-bottom: 4px solid #f0f;
+    border-bottom: 4px solid #0ff;
 }
 
 .icons img{
