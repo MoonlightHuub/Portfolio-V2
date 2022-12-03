@@ -13,5 +13,3 @@ function idioma(){
     }
 }
 
-// code to animate the shortcut scroll
-

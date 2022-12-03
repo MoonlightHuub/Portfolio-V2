@@ -8,10 +8,9 @@ body{
 
 }
 
-.desktop_verison{
-    
+html{
+    scroll-behavior: smooth;
 }
-
 
 /* -------------------  CABECERA  ----------------- */
 

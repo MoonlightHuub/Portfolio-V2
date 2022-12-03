@@ -1,0 +1,19 @@
+@media screen and ( max-width: 800px ){
+    .desktop_version{
+        display: none;
+    }
+}
+
+*{
+    color: #f1f1f1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ---------------- header mobile --------------*/ 
+
+.header-mobile{
+    border: 2px solid #f0f;
+}
