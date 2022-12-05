@@ -1,4 +1,4 @@
-// Codigo para cambiar de idoma - Code to change de languaje
+// Codigo para cambiar de idoma - Code to change the languaje
 
 var check = document.querySelector(".check")
 check.addEventListener("click", idioma)
